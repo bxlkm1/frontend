@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*Global Start*/
+html,body { height: 100%;margin: 0; padding: 0;}
+* {margin:0;padding:0;font-family:"微软雅黑";font-size:12px;}
+ul{list-style:none;}
+img{border:none;}
+
+body{background:url(../images/Space.png) center;}
+
+.main{width:100%; height:100%; background:url(../images/Whale.png) left -100px bottom 13% no-repeat;background-size:120% auto; position:relative; z-index:9;}
+.logo{width:100px; height:100px; background:url(../images/ELA.png) no-repeat; background-size:100% 100%; position:absolute; left:50%; top:90px; margin-left:-50px; z-index:99999999999;}
+
+.form{width:100%; height:auto; position:absolute; top:190px; left:0;}
+.form a{width:250px; height:60px; border:3px solid #fff; display:block;  margin:0 auto;margin-top:42px; text-align:center; font-size:18px; text-decoration:none; color:#fff; line-height:40px;}
+.form a span{line-height:8px; font-size:13px; color:#fff;}
+
+.footer{position:absolute; bottom:22px; left:50%; margin-left:-50px;}
+.footer a{color:#fff; font-size:12px; text-decoration:none;}
+
+.dialog,.dialog_loading{width:100%; height:100%;position:fixed; z-index:99; top:0; display:none;}
+.dialog_bg{width:100%; height:100%;position:fixed; z-index:99; top:0; background:#000;filter:alpha(opacity=70); -moz-opacity:0.7; -khtml-opacity: 0.7; opacity: 0.7; }
+.dialog_form{width:100%; height:auto; position:absolute; top:190px; left:0; position:relative; z-index:999; text-align:center;}
+.dialog_form input{width:244px; padding:0 3px; height:60px; border:3px solid #fff; display:block; background:#000;  margin:0 auto;margin-top:150px; text-align:center; font-size:18px; text-decoration:none; color:#fff; line-height:40px;}
+.dialog a{ display:block; margin:0 auto;width:50px; height:36px; position:absolute; top:481px; left:50%; margin-left:-25px; z-index:9999;}
+
+.dialog_loading_main{width:100%; height:auto; position:absolute; top:232px; left:0; position:relative; z-index:999; text-align:center;}
+.dialog_loading_bg{width:100%; height:100%;position:fixed; z-index:99; top:0; background:#000;}
+.dialog_loading_main p{color:#fff; margin:0 15%; text-align:left;}
+.dialog_loading_main p.f14{font-size:14px;}
+.dialog_loading_main p.f11{font-size:11px;}
+.dialog_loading img{ margin:0 auto;width:100px; height:100px; position:absolute; top:481px; left:50%; margin-left:-50px; z-index:9999;}
+
+.form_home a{margin-top:20px;}
+.form_home p{color:#f8e71c; text-align:center;}
