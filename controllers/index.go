@@ -106,8 +106,7 @@ func (this *IndexController) SubmitAddr() {
 		return
 	}
 
-	_ , err := common.Uint168FromAddressWithCheck(addr)
-	if err != nil {
+	if  checkAddr(addr) {
 		this.Data["msg"] = "Invalid ELA Address"
 		this.TplName = "error.html"
 		return
@@ -390,4 +389,13 @@ func (this *IndexController) RegisterUser(){
 		this.Data["json"] = RetMsg{Error:-1}
 		this.ServeJSON()
 	}
+}
+
+func checkAddr(walletAddr string) bool{
+	uint168, err := common.Uint168FromAddress(walletAddr)
+	if err != nil || (uint168[0] != 0x21 && uint168[0] != 0x12 && uint168[0] != 0x4B && uint168 != nil) {
+		beego.Warn("illagal address %s , %s\n", walletAddr, err)
+		return false
+	}
+	return true
 }
