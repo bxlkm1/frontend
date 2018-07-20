@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"io/ioutil"
 	"encoding/json"
-	"gx/ipfs/QmXTpwq2AkzQsPjKqFQDNY2bMdsAT53hUBETeyj8QRHTZU/sha256-simd"
 	"time"
 	"encoding/hex"
 	"strconv"
@@ -16,6 +15,7 @@ import (
 	"math"
 	"fmt"
 	"github.com/elastos/Elastos.ELA.Utility/common"
+	"crypto/sha256"
 )
 
 type IndexController struct {
